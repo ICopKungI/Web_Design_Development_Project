@@ -6,88 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./main.css">
+  <script src="vue.js"></script>
+  <!-- <link rel="icon" href="..." type="image" sizes="16x16"> -->
   <title>อู่แท็กซี่ A9</title>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+  <div id="app">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">A9</a>
+        <button class="navbar-toggler" data-bs-target="#manu" data-bs-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="manu">
+          <div class="navbar-nav d-flex justify-content-end con">
+            <ul class="navbar-nav">
+              <li class="navbar-item">
+                <a href="#" class="nav-link active">หน้าหลัก</a>
+              </li>
+              <li class="navbar-item">
+                <a href="page2.html" class="nav-link">ราคาเช่าขับ</a>
+              </li>
+              <li class="navbar-item">
+                <a href="page3.html" class="nav-link">เงื่อนไข</a>
+              </li>
+              <li class="navbar-item">
+                <a href="page4.html" class="nav-link">ติดต่อ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="multi" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li class="active" data-bs-target="#multi" data-bs-slide-to="0"></li>
+        <li class="" data-bs-target="#multi" data-bs-slide-to="1"></li>
+        <li class="" data-bs-target="#multi" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active h-100">
+          <div class="bg-warning w-100 d-block h-100 d-flex justify-content-center align-items-center">
+            <h1 class="text-dark">โปรโมชั่น/ข่าวสาร</h1>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <div class="bg-dark w-100 d-block h-100 d-flex justify-content-center align-items-center ">
+            <h1 class="text-white">โปรโมชั่น/ข่าวสาร</h1>
+          </div>
+
+        </div>
+        <div class="carousel-item h-100">
+          <div class="bg-primary w-100 d-block h-100 d-flex justify-content-center align-items-center">
+            <h1 class="text-white">โปรโมชั่น/ข่าวสาร</h1>
+          </div>
+        </div>
+      </div>
+      <a href="#multi" role="button" class="carousel-control-prev" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previos</span>
+      </a>
+      <a href="#multi" role="button" class="carousel-control-next" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+    <!--  -->
+
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">A9</a>
-      <button class="navbar-toggler" data-bs-target="#manu" data-bs-toggle="collapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="manu">
-        <div class="navbar-nav d-flex justify-content-end con">
-          <ul class="navbar-nav">
-            <li class="navbar-item">
-              <a href="#" class="nav-link active">หน้าหลัก</a>
-            </li>
-            <li class="navbar-item">
-              <a href="page2.html" class="nav-link">ราคาเช่าขับ</a>
-            </li>
-            <li class="navbar-item">
-              <a href="page3.html" class="nav-link">เงื่อนไข</a>
-            </li>
-            <li class="navbar-item">
-              <a href="page4.html" class="nav-link">ติดต่อ</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Carousel -->
-  <div id="multi" class="carousel slide">
-    <ol class="carousel-indicators">
-      <li class="active" data-bs-target="#multi" data-bs-slide-to="0"></li>
-      <li class="" data-bs-target="#multi" data-bs-slide-to="1"></li>
-      <li class="" data-bs-target="#multi" data-bs-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active h-100">
-        <div class="bg-warning w-100 d-block h-100 d-flex justify-content-center align-items-center">
-          <h1 class="text-dark">โปรโมชั่น/ข่าวสาร</h1>
-        </div>
-      </div>
-      <div class="carousel-item h-100">
-        <div class="bg-dark w-100 d-block h-100 d-flex justify-content-center align-items-center ">
-          <h1 class="text-white">โปรโมชั่น/ข่าวสาร</h1>
+      <div class="row">
+
+
+        <div style="height: 300px;"
+          class="mt-3 col-md-6 col-12 d-flex justify-content-center align-items-center flex-column bg-info">
+          <h3>ราคาเช่าขับ</h3>
+          <a href="page2.html">เพิ่มเติม</a>
         </div>
 
-      </div>
-      <div class="carousel-item h-100">
-        <div class="bg-primary w-100 d-block h-100 d-flex justify-content-center align-items-center">
-          <h1 class="text-white">โปรโมชั่น/ข่าวสาร</h1>
+        <div style="height: 300px;"
+          class="mt-3 col-md-6 col-12 d-flex justify-content-center align-items-center flex-column bg-danger text-white">
+          <h3>เงื่อนไขการสมัคร</h3>
+          <a href="page3.html">เพิ่มเติม</a>
         </div>
-      </div>
-    </div>
-    <a href="#multi" role="button" class="carousel-control-prev" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Previos</span>
-    </a>
-    <a href="#multi" role="button" class="carousel-control-next" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div>
-  <!--  -->
-
-  <div class="container-fluid">
-    <div class="row">
-
-      <div style="height: 300px;"
-        class="mt-3 col-md-6 col-12 d-flex justify-content-center align-items-center flex-column bg-info">
-        <h3>ราคาเช่าขับ</h3>
-        <a href="page2.html">เพิ่มเติม</a>
-      </div>
-      <div style="height: 300px;"
-        class="mt-3 col-md-6 col-12 d-flex justify-content-center align-items-center flex-column bg-danger text-white">
-        <h3>เงื่อนไขการสมัคร</h3>
-        <a href="page3.html">เพิ่มเติม</a>
-      </div>
         <div class="col col-md-2"></div>
-        <div style="height: 300px !important;" class="mt-3 col-12 col-md-4 bg-warning h-100 d-flex justify-content-center align-items-center">
+        <div style="height: 300px !important;"
+          class="mt-3 col-12 col-md-4 bg-warning h-100 d-flex justify-content-center align-items-center">
           <h3>ข้อมูลติดต่อ</h3>
         </div>
         <div class="mt-3 col-12 col-md-4">
@@ -97,12 +103,19 @@
         </div>
         <div class="col col-md-2"></div>
       </div>
-  </div>
+    </div>
 
-  <footer class="bg-success mt-3">
-    WEB DESIGN DEVELOPMENT
-  </footer>
+    <footer class="bg-success mt-3">
+      WEB DESIGN DEVELOPMENT
+    </footer>
+  </div>
 </body>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+  let app = new Vue({
+    el: '#app',
+    data: {}
+  })
+</script>
 
 </html>
