@@ -212,9 +212,13 @@ function renderTodoItemChange(todoItem) {
         const op2 = document.createElement("option")
         op2.innerHTML = "NGV"
         op2.setAttribute("value", "NGV")
+        const op3 = document.createElement("option")
+        op3.innerHTML = "LPG/NGV"
+        op3.setAttribute("value", "LPG/NGV")
         car_new4.appendChild(op)
         car_new4.appendChild(op1)
         car_new4.appendChild(op2)
+        car_new4.appendChild(op3)
         text_data_div.appendChild(text4)
         text_data_div.appendChild(car_new4)
 
