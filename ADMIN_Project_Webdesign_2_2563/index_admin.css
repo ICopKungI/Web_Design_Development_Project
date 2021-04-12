@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.container {
+    overflow-y: auto;
+    display: flex;
+    height: 100vh;
+}
+
+.side-bar {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: #dadada;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+    width: 300px;
+    min-width: 300px;
+    height: 100%;
+    padding: 10px;
+}
+
+.text-input {
+    padding: 10px;
+    min-width: 200px;
+    width: 200px;
+}
+
+.add-input-set {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* set height input set */
+    /* height: 50px; */
+}
+
+.cross-btn {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.x-cross {
+    background-color: black;
+    height: 3px;
+    width: 50%;
+}
+
+.y-cross {
+    background-color: black;
+    height: 50%;
+    width: 3px;
+    position: absolute;
+}
+
+
+/*  */
+
+.content {
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+}
+
+.head-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    font-size: 15pt;
+    overflow: auto;
+}
+
+.head-control .cross-btn {
+    background-color: rgb(255, 119, 119);
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+.add-todo-list {
+    width: 300px;
+    min-width: 300px;
+}
+
+.todo-head {
+    width: 100%;
+    background-color: white;
+    font-size: 15pt;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #e5af08;
+}
+
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    border-bottom: 0.3px solid rgb(121, 121, 121);
+}
+
+.todo-list-item .cross-btn {
+    background-color: rgb(255, 119, 119);
+    transform: rotate(45deg) scale(0.8);
+}
+
+.todo-list-text {
+    display: flex;
+    width: 450px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    font-size: 13pt;
+}
+
+.todo-list-item input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.todo-list-item input:checked~.check-box {
+    background-color: #e5af08;
+}
+
+.check-box {
+    width: 20px;
+    height: 20px;
+    background-color: #dadada;
+    margin-right: 10px;
+}
+
+.todo-head-structure {
+    display: none;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+}
+
+#todo-list-container {
+    width: 50%;
+    height: 78vh;
+    /* max-height: 100vh; */
+    border-right: 1px solid black;
+    text-align: -webkit-center;
+    overflow: auto;
+}
+
+#todo-list-container2 {
+    width: 50%;
+    /* height: 550px; */
+    text-align: -webkit-center;
+}
+
+.image-item {
+    width: 384px;
+    height: 216px;
+    margin-left: 10px;
+}
+
+.list-item {
+    width: 80%;
+    font-size: 15pt;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.lableitem {
+    margin-right: 10px;
+}
+
+.zonebutton {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.removebutton,
+.changebutton {
+    border: 1px solid black;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.removebutton {
+    background-color: red;
+    color: white;
+}
+
+.changebutton {
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index_admin.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Side Bar -->
+        <div class="side-bar">
+            <div class="add-input-set" style="visibility: hidden;">
+                <input id="todo-head-input" class="text-input" type="text" placeholder="Add List...">
+                <div id="add-todo-btn" class="cross-btn" title="Add Todo List" onclick="addTodoList()">
+                    <div class="x-cross"></div>
+                    <div class="y-cross"></div>
+                </div>
+            </div>
+            <div id="todo-head-container">
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="content">
+            <div class="head-control">
+                <span>
+                    <b id="todo-head-text"></b>
+                </span>
+                <div id="clear-todo-head-btn" class="cross-btn" title="" onclick="removeTodoList()" style="visibility: hidden;">
+                    <div class="x-cross"></div>
+                    <div class="y-cross"></div>
+                </div>
+            </div>
+            <div class="add-todo-list">
+
+                <!-- หาย ข้อมูลรถ / ไม่หาย Slider -->
+                <div class="add-input-set" style="visibility: visible; height: 50px;">
+                    <input id="img-link-input" class="text-input" type="text" placeholder="รูปโฆษณา">
+                    <div id="add-todo-item-btn" class="cross-btn" title="Add Todo" onclick="addTodoListItem()">
+                        <!-- <div class="x-cross"></div>
+                        <div class="y-cross"></div> -->
+                        เพิ่ม
+                    </div>
+                </div>
+
+                <div class="add-input-set" style="visibility: hidden; height: 0px;">
+                    <input id="car-img-input" class="text-input" type="text" placeholder="รูปภาพรถ" style="margin-right: 10px;">
+                    <input id="car-data-input" class="text-input" type="text" placeholder="หมวดทะเบียนรถ" style="margin-right: 10px;">
+                    <input id="car-cost-input" class="text-input" type="number" placeholder="ราคาเช่า" style="margin-right: 10px;">
+                    <select id="car-gas-input" class="text-input" style="width: 75%; margin-right: 10px;">
+                        <option value="">เลือกประเภทแก๊ส</option>
+                        <option value="LPG">LPG</option>
+                        <option value="NGV">NGV</option>
+                    </select>
+                    <div id="add-todo-item-btn" class="cross-btn" title="Add Todo" onclick="addTodoListItem()">
+                        <!-- <div class="x-cross"></div>
+                        <div class="y-cross"></div> -->
+                        เพิ่ม
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="main-container">
+                <div id="todo-list-container">
+
+                </div>
+                <div id="todo-list-container2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCFK2wDFYHoEjcnktsvrD_f846_u6zL6_g",
+            authDomain: "project-webdesign-2-2563.firebaseapp.com",
+            databaseURL: "https://project-webdesign-2-2563-default-rtdb.firebaseio.com",
+            projectId: "project-webdesign-2-2563",
+            storageBucket: "project-webdesign-2-2563.appspot.com",
+            messagingSenderId: "899761362410",
+            appId: "1:899761362410:web:a38b9086c24000e6998e93",
+            measurementId: "G-FEFX44FX85"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./main_admin.js"></script>
+</body>
+
+
+</html>
