@@ -47,28 +47,30 @@
           <h1>ราคาเช่า</h1>
         </div>
         <div class="col-12 row mt-3 d-flex justify-content-center align-items-center bg-danger">
-          <h4 class="col-2" style="text-align: right;">หมวดทะเบียน:</h4>
-          <select class="col-2">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
+          <h4 class="col-2" style="text-align: right;" @click="change_num_page()">หมวดทะเบียน:</h4>
+          <select class="col-2" v-model="sort_car">
+            <option value="">หมวดทะเบียน</option>
+            <option v-for="car in car" :value="`${car}`">{{car}}</option>
           </select>
           <h4 class="col-2" style="text-align: right;">ราคา:</h4>
-          <select class="col-2">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
+          <select class="col-2" v-model="sort_cost">
+            <option value="0">ราคา</option>
+            <option v-for="cost in cost" :value="`${cost}`">{{cost}}</option>
           </select>
           <h4 class="col-2" style="text-align: right;">LPG/NGV:</h4>
-          <select class="col-2">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
+          <select class="col-2" v-model="sort_gas">
+            <option value="">เลือกประเภทแก๊ส</option>
+            <option value="LPG">LPG</option>
+            <option value="NGV">NGV</option>
+            <option value="LPG/NGV">LPG/NGV</option>
           </select>
         </div>
 
-        <div v-for="num in 9" style="height: 300px;" class="mt-1 col-12 col-md-6 col-lg-4 ">
-          <h3 class="bg-dark text-white h-100 m-1 d-flex justify-content-center align-items-center">รถเช่า {{num}}</h3>
+        <div v-if="((sort_car == '') || (sort_car == ob_data[key_s[num-1]].car)) && ((sort_cost == 0) || (sort_cost == ob_data[key_s[num-1]].cost)) && ((sort_gas == '') || (ob_data[key_s[num-1]].gas.includes(sort_gas)) || (sort_gas.includes(ob_data[key_s[num-1]].gas)))" v-for="num in len_car" style="height: 300px; border: solid white 5px;" class="bg-dark text-white mt-1 col-12 col-md-6 col-lg-4">
+          <h3 class="m-1">{{ob_data[key_s[num-1]].car}}</h3>
+          <h3 class="m-1">{{ob_data[key_s[num-1]].cost}}</h3>
+          <h3 class="m-1">{{ob_data[key_s[num-1]].gas}}</h3>
+          <img width="50%" height="50%" :src="`${ob_data[key_s[num-1]].img}`">
         </div>
 
       </div>
@@ -80,11 +82,47 @@
   </div>
 </body>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+
 <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCFK2wDFYHoEjcnktsvrD_f846_u6zL6_g",
+    authDomain: "project-webdesign-2-2563.firebaseapp.com",
+    databaseURL: "https://project-webdesign-2-2563-default-rtdb.firebaseio.com",
+    projectId: "project-webdesign-2-2563",
+    storageBucket: "project-webdesign-2-2563.appspot.com",
+    messagingSenderId: "899761362410",
+    appId: "1:899761362410:web:a38b9086c24000e6998e93",
+    measurementId: "G-FEFX44FX85"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./user.js"></script>
+
+<!-- <script>
   let app = new Vue({
     el: '#app',
-    data: {}
+    data: {
+      ref2: firebase.database().ref("todoList"),
+      runIdRef2: firebase.database().ref("runId"),
+    },
+    methods: {
+      change_num_page() {
+        console.log(this.ref2);
+        console.log(this.runIdRef2);
+      }
+    },
   })
-</script>
+</script> -->
 
 </html>
