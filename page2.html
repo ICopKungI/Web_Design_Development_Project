@@ -42,9 +42,29 @@
     </nav>
 
     <div class="container">
-      <div class="row">
-        <div class="h-90 mt-3 d-flex justify-content-center align-items-center bg-warning">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 h-90 mt-3 d-flex justify-content-center align-items-center bg-warning">
           <h1>ราคาเช่า</h1>
+        </div>
+        <div class="col-12 row mt-3 d-flex justify-content-center align-items-center bg-danger">
+          <h4 class="col-2" style="text-align: right;">หมวดทะเบียน:</h4>
+          <select class="col-2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <h4 class="col-2" style="text-align: right;">ราคา:</h4>
+          <select class="col-2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <h4 class="col-2" style="text-align: right;">LPG/NGV:</h4>
+          <select class="col-2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
         </div>
 
         <div v-for="num in 9" style="height: 300px;" class="mt-1 col-12 col-md-6 col-lg-4 ">
