@@ -66,9 +66,9 @@
           </select>
         </div>
 
-        <div v-if="((sort_car == '') || (sort_car == ob_data[key_s[num-1]].car)) && ((sort_cost == 0) || (sort_cost == ob_data[key_s[num-1]].cost)) && ((sort_gas == '') || (sort_gas == ob_data[key_s[num-1]].gas) || (ob_data[key_s[num-1]].gas.includes(sort_gas)) || (sort_gas.includes(ob_data[key_s[num-1]].gas)))" v-for="num in len_car" style="height: 300px; border: solid white 5px;" class="bg-dark text-white mt-1 col-12 col-md-6 col-lg-4">
+        <div v-if="((sort_car == '') || (sort_car == ob_data[key_s[num-1]].car)) && ((sort_cost == 0) || (sort_cost == ob_data[key_s[num-1]].cost)) && ((sort_gas == '') || (sort_gas == ob_data[key_s[num-1]].gas))" v-for="num in len_car" style="height: 300px; border: solid white 5px;" class="bg-dark text-white mt-1 col-12 col-md-6 col-lg-4">
           <h3 class="m-1">หมวดทะเบียน:{{ob_data[key_s[num-1]].car}}</h3>
-          <h3 class="m-1">ราคา: {{ob_data[key_s[num-1]].cost}} ต่อวัน?</h3>
+          <h3 class="m-1">ราคา: {{ob_data[key_s[num-1]].cost}} ต่อวัน</h3>
           <h3 class="m-1">แก๊สประเภท: {{ob_data[key_s[num-1]].gas}}</h3>
           <img width="50%" height="50%" :src="`${ob_data[key_s[num-1]].img}`">
         </div>
