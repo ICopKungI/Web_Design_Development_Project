@@ -41,19 +41,19 @@
       </div>
     </nav>
     <!-- Carousel -->
-    <div id="multi" class="carousel slide">
+    <div id="multi" class="carousel slide" data-bs-ride="carousel">
       <ol class="carousel-indicators">
         <li class="active" data-bs-target="#multi" data-bs-slide-to="0"></li>
         <li v-for="num in len_pro_link" class="" data-bs-target="#multi" :data-bs-slide-to="`${num}`"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active h-100">
-          <div class="h-100 bg-warning d-block d-flex justify-content-center align-items-center">
+          <div class="bg-dark w-100 d-block h-100 d-flex justify-content-center align-items-center">
             <img class="h-100" :src="`${pro_link[0]}`" alt="">
           </div>
         </div>
-        <div v-for="num in len_pro_link" class="carousel-item h-100">
-          <div class="h-100 bg-warning d-block d-flex justify-content-center align-items-center">
+        <div class="carousel-item h-100" v-for="num in len_pro_link">
+          <div class="bg-dark w-100 d-block h-100 d-flex justify-content-center align-items-center">
             <img class="h-100" :src="`${pro_link[num]}`" alt="">
           </div>
         </div>
@@ -105,37 +105,31 @@
   </div>
 </body>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- <script>
-  let app = new Vue({
-    el: '#app',
-    data: {}
-  })
-</script> -->
-<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
 
-<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
  https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
+  <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
-        apiKey: "AIzaSyCFK2wDFYHoEjcnktsvrD_f846_u6zL6_g",
-        authDomain: "project-webdesign-2-2563.firebaseapp.com",
-        databaseURL: "https://project-webdesign-2-2563-default-rtdb.firebaseio.com",
-        projectId: "project-webdesign-2-2563",
-        storageBucket: "project-webdesign-2-2563.appspot.com",
-        messagingSenderId: "899761362410",
-        appId: "1:899761362410:web:a38b9086c24000e6998e93",
-        measurementId: "G-FEFX44FX85"
+      apiKey: "AIzaSyCFK2wDFYHoEjcnktsvrD_f846_u6zL6_g",
+      authDomain: "project-webdesign-2-2563.firebaseapp.com",
+      databaseURL: "https://project-webdesign-2-2563-default-rtdb.firebaseio.com",
+      projectId: "project-webdesign-2-2563",
+      storageBucket: "project-webdesign-2-2563.appspot.com",
+      messagingSenderId: "899761362410",
+      appId: "1:899761362410:web:a38b9086c24000e6998e93",
+      measurementId: "G-FEFX44FX85"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-</script>
+  </script>
 <script src="./user.js"></script>
-
 </html>
