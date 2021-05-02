@@ -447,6 +447,8 @@ function createTodoListItem({ key }) {
         image.classList.add("image-item")
             // todoList.appendChild(label)
         todoList.appendChild(image)
+        let newline = document.createElement("BR")
+        todoList.appendChild(newline)
 
         label2.innerHTML = DATA[NOW_TODO_HEAD].data[key].car
         label2.classList.add("lableitem")
