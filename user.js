@@ -11,6 +11,7 @@ let app = new Vue({
       ob_data: {},
       key_s: [],
       len_car: 0,
+      len_car2: 0,
       car:[],
       cost:[],
       sort_car: "",
@@ -41,6 +42,7 @@ let app = new Vue({
             this.pro_data = this.DATA["list003"].link;
             this.key_s = Object.keys(this.ob_data);
             this.len_car = this.key_s.length;
+            this.len_car2 = this.len_car-1;
         
             this.key_s.forEach(key => {
                 this.car.push(this.ob_data[key].car);
