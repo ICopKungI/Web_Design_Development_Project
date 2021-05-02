@@ -5,6 +5,9 @@ let app = new Vue({
       runIdRef: firebase.database().ref("runId"),
       DATA: {},
       RUN_ID: 0,
+      pro_data:{},
+      pro_link:[],
+      len_pro_link: 0,
       ob_data: {},
       key_s: [],
       len_car: 0,
@@ -27,29 +30,28 @@ let app = new Vue({
             this.runIdRef.on("value", (snapshot) => {
                 const data = snapshot.val();
                 this.RUN_ID = data;
-                console.log(this.RUN_ID);
             });
         },
         fetch(data) {
             this.DATA = data;
-            console.log(this.DATA);
             this.getData();
         },
         getData() {
             this.ob_data = this.DATA["list004"].data;
+            this.pro_data = this.DATA["list003"].link;
             this.key_s = Object.keys(this.ob_data);
             this.len_car = this.key_s.length;
         
-            console.log(this.ob_data);
-            console.log(this.key_s);
-            console.log(this.len_car);
-
             this.key_s.forEach(key => {
                 this.car.push(this.ob_data[key].car);
                 this.cost.push(this.ob_data[key].cost);
             });
+            Object.keys(this.pro_data).forEach(key => {
+                this.pro_link.push(this.pro_data[key].link);
+            });
             this.car = Array.from(new Set(this.car));
             this.cost = Array.from(new Set(this.cost));
+            this.len_pro_link = this.pro_link.length-1;
         }
     },
   })
