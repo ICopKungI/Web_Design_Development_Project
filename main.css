@@ -7,7 +7,10 @@
 .carousel-item > img {
   object-fit: cover;
 }
-
+body{
+  font-family: 'Pridi', serif;
+  background-color: rgb(34 54 70);
+}
 .card {
   margin: auto;
   max-width: 300px;
@@ -18,6 +21,8 @@ footer {
   color: white;
   padding: 20px 0px;
   text-align: center;
+  /* แก้สี foot */
+  background-color: rgb(40 41 43);
 }
 
 .con{
@@ -28,6 +33,10 @@ footer {
   cursor: pointer;
 }.h_80{
   height: 80% !important;
+}
+
+.color_nav{
+  background-color: rgb(255 228 115);
 }
 
 @media only screen and (min-width: 600px) {
