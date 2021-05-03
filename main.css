@@ -78,7 +78,27 @@ footer {
   font-size: var(--topic_size);
   font-family: var(--topic_font);
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 0.8%;
+  z-index: 99;
+  font-size: 18px;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
 
+#myBtn:hover {
+    transition: 1s;
+  background-color:white;
+  color: black;
+}
 @media only screen and (min-width: 600px) {
   .carousel,
   .carousel-inner,
