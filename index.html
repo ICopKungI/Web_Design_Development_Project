@@ -29,7 +29,7 @@
                 <a href="#" class="nav-link menu_text active">หน้าหลัก</a>
               </li>
               <li class="navbar-item">
-                <a href="#car_multi" class="nav-link menu_text">รถเช่า</a>
+                <a href="page2.html" class="nav-link menu_text">รถเช่า</a>
               </li>
               <li class="navbar-item">
                 <a href="#condition" class="nav-link menu_text">เงื่อนไข</a>
@@ -81,11 +81,11 @@
         <div id="car_multi"
           class="carousel slide mt-3 col-md-6 col-12 d-flex justify-content-center align-items-center flex-column bg-dark"
           data-bs-ride="carousel">
-          <h3 class="cur topic text-white" onclick="window.open('page2.html', '_blank')">รถเช่า</h3>
+          <h3 class="cur topic text-white" onclick="window.open('page2.html', '_self')">รถเช่า</h3>
           <div class="carousel-inner">
             <div class="carousel-item active h-100">
               <div class="bg-dark w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                <img class="cur h_80" onclick="window.open('page2.html', '_blank')" :src="`${ob_link[0]}`">
+                <img class="cur h_80" onclick="window.open('page2.html', '_self')" :src="`${ob_link[0]}`">
                 <div>
                   <h3 class="m-1 text" style="color: white;"><p class="h_text">หมวดทะเบียน: </p>{{car[0]}}</h3>
                   <h3 class="m-1 text" style="color: white;"><p class="h_text">ราคา: </p>{{cost[0]}} ต่อวัน</h3>
@@ -94,7 +94,7 @@
             </div>
             <div class="carousel-item h-100" v-for="nnn in len_ob_link">
               <div class="bg-dark w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                <img class="cur h_80" onclick="window.open('page2.html', '_blank')" :src="`${ob_link[nnn]}`">
+                <img class="cur h_80" onclick="window.open('page2.html', '_self')" :src="`${ob_link[nnn]}`">
                 <div>
                   <h3 class="m-1 text" style="color: white;"><p class="h_text">หมวดทะเบียน: </p>{{car[nnn]}}</h3>
                   <h3 class="m-1 text" style="color: white;"><p class="h_text">ราคา: </p>{{cost[nnn]}} ต่อวัน</h3>

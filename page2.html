@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./main.css">
   <script src="vue.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@100&display=swap" rel="stylesheet">
   <!-- <link rel="icon" href="..." type="image" sizes="16x16"> -->
   <title>อู่แท็กซี่ A9</title>
 </head>
@@ -66,21 +67,23 @@
           </select>
         </div>
 
-        <div class="row col-12">
+        <div class="row col-12 rrr d-flex flex-column justify-content-center align-items-center">
           <div
             v-if="((sort_car == '') || (sort_car == ob_data[key_s[num-1]].car)) && ((sort_cost == 0) || (sort_cost == ob_data[key_s[num-1]].cost)) && ((sort_gas == '') || (sort_gas == ob_data[key_s[num-1]].gas))"
             v-for="num in len_car" style="border: solid white 5px;"
-            class="bg-dark text-white mt-1 col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
-            <div><p class="m-1 text">
-            <p class="h_text">หมวดทะเบียน: </p>{{ob_data[key_s[num-1]].car}}
-            </p>
-            <p class="m-1 text">
-            <p class="h_text">ราคา: </p>{{ob_data[key_s[num-1]].cost}} ต่อวัน
-            </p>
-            <p class="m-1 text">
-            <p class="h_text">แก๊สประเภท: </p>{{ob_data[key_s[num-1]].gas}}
-            </p></div>
-            <img width="80%" :src="`${ob_data[key_s[num-1]].img}`">
+            class="bg-dark text-white mt-3 col-12 row d-flex justify-content-center align-items-center">
+            <img class="col-12 col-lg-8 img_car" :src="`${ob_data[key_s[num-1]].img}`">
+            <div class="col-lg-4 col">
+                <p class="m-1 text">
+                <p class="h_text">หมวดทะเบียน: </p>{{ob_data[key_s[num-1]].car}}
+                </p>
+                <p class="m-1 text">
+                <p class="h_text">ราคา: </p>{{ob_data[key_s[num-1]].cost}} ต่อวัน
+                </p>
+                <p class="m-1 text">
+                <p class="h_text">แก๊สประเภท: </p>{{ob_data[key_s[num-1]].gas}}
+                </p>
+            </div>
           </div>
         </div>
 

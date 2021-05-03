@@ -30,7 +30,7 @@ body{
   background-size: cover;
 }
 .color_g1{
-  background:rgb(255 228 115);
+  background: rgb(255 228 115);
 }
 .card {
   margin: auto;
@@ -72,8 +72,19 @@ footer {
 }
 
 .logo_con{
-  width: 50%;
+  width: 40%;
   margin: 3px;
+}
+
+.rrr{
+  padding: 0 !important;
+}
+
+.img_car{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 0 !important;
+  border: 3px white solid;
 }
 
 .text{
@@ -105,7 +116,7 @@ footer {
   font-size: 18px;
   border: 1px solid white;
   outline: none;
-  background-color: rgb(20, 20, 20);
+  background-color: #212529;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -114,8 +125,9 @@ footer {
 
 #myBtn:hover {
     transition: 1s;
-  background-color:white;
-  color: black;
+  background-color: rgb(255 228 115);
+  color: #212529;
+  border-color: rgb(255 228 115);
 }
 @media only screen and (min-width: 600px) {
   .carousel,
