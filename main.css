@@ -102,12 +102,21 @@ footer {
   border-radius: 30px ;
 }
 
-#contact{
+#contact, #condition{
   padding: 15px;
 }
 
 .map{
   padding: 0 !important;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+  color: rgb(179, 179, 179);
 }
 
 .text{
