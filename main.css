@@ -1,3 +1,17 @@
+:root {
+  --text_size: 18px;
+  --text_font: 'Pridi', serif;
+/* h = head */
+  --h_text_size: 22px;
+  --h_text_font: sans-serif;
+
+  --menu_text_size: 18px;
+  --menu_text_font: sans-serif;
+
+  --topic_size: 32px;
+  --topic_font: serif;
+}
+
 .carousel,
 .carousel-inner,
 .carousel-item > img {
@@ -8,7 +22,6 @@
   object-fit: cover;
 }
 body{
-  font-family: 'Pridi', serif;
   background-color: rgb(34 54 70);
 }
 .card {
@@ -37,6 +50,33 @@ footer {
 
 .color_nav{
   background-color: rgb(255 228 115);
+}
+
+.logo_con{
+  width: 50%;
+  margin: 3px;
+  /* height: 50px; */
+}
+
+.text{
+  font-size: var(--text_size);
+  font-family: var(--text_font);
+}
+
+.h_text{
+  font-size: var(--h_text_size);
+  font-family: var(--h_text_font);
+  display: inline;
+}
+
+.menu_text{
+  font-size: var(--menu_text_size);
+  font-family: var(--menu_text_font);
+}
+
+.topic{
+  font-size: var(--topic_size);
+  font-family: var(--topic_font);
 }
 
 @media only screen and (min-width: 600px) {
