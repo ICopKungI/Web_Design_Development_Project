@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./main.css">
   <script src="vue.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
   <!-- <link rel="icon" href="..." type="image" sizes="16x16"> -->
   <title>อู่แท็กซี่ A9</title>
 </head>
@@ -87,8 +87,12 @@
               <div class="bg-dark w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                 <img class="cur h_80" onclick="window.open('page2.html', '_self')" :src="`${ob_link[0]}`">
                 <div>
-                  <h3 class="m-1 text" style="color: white;"><p class="h_text">หมวดทะเบียน: </p>{{car[0]}}</h3>
-                  <h3 class="m-1 text" style="color: white;"><p class="h_text">ราคา: </p>{{cost[0]}} ต่อวัน</h3>
+                  <h3 class="m-1 text" style="color: white;">
+                    <p class="h_text">หมวดทะเบียน: </p>{{car[0]}}
+                  </h3>
+                  <h3 class="m-1 text" style="color: white;">
+                    <p class="h_text">ราคา: </p>{{cost[0]}} ต่อวัน
+                  </h3>
                 </div>
               </div>
             </div>
@@ -96,8 +100,12 @@
               <div class="bg-dark w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                 <img class="cur h_80" onclick="window.open('page2.html', '_self')" :src="`${ob_link[nnn]}`">
                 <div>
-                  <h3 class="m-1 text" style="color: white;"><p class="h_text">หมวดทะเบียน: </p>{{car[nnn]}}</h3>
-                  <h3 class="m-1 text" style="color: white;"><p class="h_text">ราคา: </p>{{cost[nnn]}} ต่อวัน</h3>
+                  <h3 class="m-1 text" style="color: white;">
+                    <p class="h_text">หมวดทะเบียน: </p>{{car[nnn]}}
+                  </h3>
+                  <h3 class="m-1 text" style="color: white;">
+                    <p class="h_text">ราคา: </p>{{cost[nnn]}} ต่อวัน
+                  </h3>
                 </div>
               </div>
             </div>
@@ -114,38 +122,46 @@
         <!-- <a href="page2.html">เพิ่มเติม</a> -->
         <!-- </div> -->
 
-        <div id="condition" class="mt-3 col-md-6 col-12 text-drak d-flex flex-column justify-content-center align-items-center color_g1">
+        <div id="condition"
+          class="mt-3 col-md-6 col-12 text-drak d-flex flex-column justify-content-center align-items-center color_g1">
           <h3 class="topic">เงื่อนไขการสมัคร</h3>
           <div class="row">
-          <div class="col-4 d-flex justify-content-center align-items-center">
-            <img class="logo_con" src="./img/Public driving license.png">
-          </div>
-          <p class="col-8 text d-flex align-items-center">ใบขับขี่สาธารณะ</p>
+            <div class="col-4 d-flex justify-content-center align-items-center">
+              <img class="logo_con" src="./img/Public driving license.png">
+            </div>
+            <p class="col-8 text d-flex align-items-center">ใบขับขี่สาธารณะ</p>
 
-          <div class="col-4 d-flex justify-content-center align-items-center">
-            <img class="logo_con" src="./img/Car identification card.png">
-          </div>
-          <p class="col-8 text d-flex align-items-center">บัตรติดหน้ารถ</p>
+            <div class="col-4 d-flex justify-content-center align-items-center">
+              <img class="logo_con" src="./img/Car identification card.png">
+            </div>
+            <p class="col-8 text d-flex align-items-center">บัตรติดหน้ารถ</p>
 
-          <div class="col-4 d-flex justify-content-center align-items-center">
-            <img class="logo_con" src="./img/Guarantee.png">
-          </div>
-          <p class="col-8 text d-flex align-items-center">เงินค้ำประกัน 3000บาท</p>
+            <div class="col-4 d-flex justify-content-center align-items-center">
+              <img class="logo_con" src="./img/Guarantee.png">
+            </div>
+            <p class="col-8 text d-flex align-items-center">เงินค้ำประกัน 3000บาท</p>
 
-          <div class="col-4 d-flex justify-content-center align-items-center">
-            <img class="logo_con" src="./img/Surety.png">
+            <div class="col-4 d-flex justify-content-center align-items-center">
+              <img class="logo_con" src="./img/Surety.png">
+            </div>
+            <p class="col-8 text d-flex align-items-center">คนค้ำประกัน (มีสลิปเงินเดือน)</p>
           </div>
-          <p class="col-8 text d-flex align-items-center">คนค้ำประกัน (มีสลิปเงินเดือน)</p>
-        </div></div>
+        </div>
         <div class="col col-lg-2"></div>
         <div id="contact" class="mt-3 col-12 col-md-5 col-lg-4 color_g1 h-100">
           <h3 class="topic">ข้อมูลติดต่อ</h3>
-          <p class="text">ที่อยู่: สหกรแท็กซี่สุวรรณภูมิ( อู่ A9 ) 2 ถนน.กำแพงเพชร 7 แขวงสวนหลวง เขตสวนหลวง กทม. 10250</p>
-          <p class="text"><p class="h_text">phone: </p>0869966775</p>
-          <p class="text"><p class="h_text">phone: </p>0843427121</p>
-          <p class="text"><p class="h_text">phone: </p>0816420779</p>
-          <p class="text"><p class="h_text">phone: </p>0617010701</p>
-          <p class="text"><p class="h_text">phone: </p>0864147214</p>
+          <p class="text">ที่อยู่: สหกรแท็กซี่สุวรรณภูมิ( อู่ A9 ) 2 ถนน.กำแพงเพชร 7 แขวงสวนหลวง เขตสวนหลวง กทม. 10250
+          </p>
+          <p class="text">
+          <p class="h_text">phone: </p>0869966775</p>
+          <p class="text">
+          <p class="h_text">phone: </p>0843427121</p>
+          <p class="text">
+          <p class="h_text">phone: </p>0816420779</p>
+          <p class="text">
+          <p class="h_text">phone: </p>0617010701</p>
+          <p class="text">
+          <p class="h_text">phone: </p>0864147214</p>
         </div>
         <div class="mt-3 col-12 col-md-5 col-lg-4">
           <iframe
