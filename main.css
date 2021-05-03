@@ -56,6 +56,9 @@ footer {
   width: 100%;
 }
 
+.tab_sort{
+  padding: 5px;
+}
 .cur{
   cursor: pointer;
 }.h_80{
