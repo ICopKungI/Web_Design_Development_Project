@@ -86,6 +86,11 @@ footer {
   margin: 3px;
 }
 
+.call_icon{
+  width: 30px;
+  margin: 5px;
+}
+
 .rrr{
   padding: 0 !important;
 }
@@ -97,9 +102,18 @@ footer {
   border-radius: 30px ;
 }
 
+#contact{
+  padding: 15px;
+}
+
+.map{
+  padding: 0 !important;
+}
+
 .text{
   font-size: var(--text_size);
   font-family: var(--text_font);
+  margin-bottom: 2px;
 }
 
 .h_text{
