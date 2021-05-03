@@ -49,22 +49,22 @@
           <h1 class="topic">รถเช่า</h1>
         </div>
         <div class="col-12 row mt-3 tab_sort d-flex justify-content-center align-items-center color_g1">
-          <h4 class="col-2 sort_text m-0" style="text-align: right;" @click="change_num_page()">หมวดทะเบียน:</h4>
-          <select class="col-2 text" v-model="sort_car">
-            <option class="text" value="">หมวดทะเบียน</option>
-            <option class="text" v-for="car in car" :value="`${car}`">{{car}}</option>
+          <h4 class="col-12 col-lg-2 sort_text m-0" @click="change_num_page()">หมวดทะเบียน:</h4>
+          <select class="col-12 col-lg-2 op_text" v-model="sort_car">
+            <option class="op_text" value="">หมวดทะเบียน</option>
+            <option class="op_text" v-for="car in car" :value="`${car}`">{{car}}</option>
           </select>
-          <h4 class="col-2 sort_text m-0" style="text-align: right;">ราคา:</h4>
-          <select class="col-2 text" v-model="sort_cost">
-            <option class="text" value="0">ราคา</option>
-            <option class="text" v-for="cost in cost" :value="`${cost}`">{{cost}}</option>
+          <h4 class="col-12 col-lg-2 sort_text m-0">ราคา:</h4>
+          <select class="col-12 col-lg-2 op_text" v-model="sort_cost">
+            <option class="op_text" value="0">ราคา</option>
+            <option class="op_text" v-for="cost in cost" :value="`${cost}`">{{cost}}</option>
           </select>
-          <h4 class="col-2 sort_text m-0" style="text-align: right;">LPG/NGV:</h4>
-          <select class="col-2 text" v-model="sort_gas">
-            <option class="text" value="">เลือกประเภทแก๊ส</option>
-            <option class="text" value="LPG">LPG</option>
-            <option class="text" value="NGV">NGV</option>
-            <option class="text" value="LPG/NGV">LPG/NGV</option>
+          <h4 class="col-12 col-lg-2 sort_text m-0">LPG/NGV:</h4>
+          <select class="col-12 col-lg-2 op_text" v-model="sort_gas">
+            <option class="op_text" value="">เลือกประเภทแก๊ส</option>
+            <option class="op_text" value="LPG">LPG</option>
+            <option class="op_text" value="NGV">NGV</option>
+            <option class="op_text" value="LPG/NGV">LPG/NGV</option>
           </select>
         </div>
 

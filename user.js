@@ -16,6 +16,8 @@ let app = new Vue({
       len_car2: 0,
       car:[],
       cost:[],
+      car2:[],
+      cost2:[],
       sort_car: "",
       sort_cost: 0,
       sort_gas: "",
@@ -47,15 +49,15 @@ let app = new Vue({
             this.len_car2 = this.len_car-1;
         
             this.key_s.forEach(key => {
-                this.car.push(this.ob_data[key].car);
-                this.cost.push(this.ob_data[key].cost);
+                this.car2.push(this.ob_data[key].car);
+                this.cost2.push(this.ob_data[key].cost);
                 this.ob_link.push(this.ob_data[key].img);
             });
             Object.keys(this.pro_data).forEach(key => {
                 this.pro_link.push(this.pro_data[key].link);
             });
-            this.car = Array.from(new Set(this.car));
-            this.cost = Array.from(new Set(this.cost));
+            this.car = Array.from(new Set(this.car2));
+            this.cost = Array.from(new Set(this.cost2));
             this.len_pro_link = this.pro_link.length-1;
             this.len_ob_link = this.ob_link.length-1;
         }
