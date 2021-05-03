@@ -1,9 +1,13 @@
 :root {
-  --text_size: 30px;
+  --text_size: 20px;
   --text_font: 'Kodchasan', sans-serif;
 /* h = head */
-  --h_text_size: 25px;
+  --h_text_size: 30px;
   --h_text_font: 'Kodchasan', sans-serif;
+
+  --con_text_size: 30px;
+  --con_text_font: 'Kodchasan', sans-serif;
+
 
   --menu_text_size: 18px;
   --menu_text_font: 'Kodchasan', sans-serif;
@@ -96,6 +100,11 @@ footer {
   font-size: var(--h_text_size);
   font-family: var(--h_text_font);
   display: inline;
+}
+
+.con_text{
+  font-size: var(--con_text_size);
+  font-family: var(--con_text_font);
 }
 
 .menu_text{
