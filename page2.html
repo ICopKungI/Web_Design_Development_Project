@@ -48,7 +48,7 @@
         <div class="col-12 h-90 mt-3 d-flex justify-content-center align-items-center bg-warning">
           <h1 class="topic">รถเช่า</h1>
         </div>
-        <div class="col-12 row mt-3 tab_sort d-flex justify-content-center align-items-center bg-danger">
+        <div class="col-12 row mt-3 tab_sort d-flex justify-content-center align-items-center color_g1">
           <h4 class="col-2 sort_text m-0" style="text-align: right;" @click="change_num_page()">หมวดทะเบียน:</h4>
           <select class="col-2 text" v-model="sort_car">
             <option class="text" value="">หมวดทะเบียน</option>
@@ -71,7 +71,7 @@
         <div class="row col-12 rrr d-flex flex-column justify-content-center align-items-center">
           <div
             v-if="((sort_car == '') || (sort_car == ob_data[key_s[num-1]].car)) && ((sort_cost == 0) || (sort_cost == ob_data[key_s[num-1]].cost)) && ((sort_gas == '') || (sort_gas == ob_data[key_s[num-1]].gas))"
-            v-for="num in len_car" style="border: solid white 5px;"
+            v-for="num in len_car" style="border: solid #ffc107 5px;"
             class="bg-dark text-white mt-3 col-12 row d-flex justify-content-center align-items-center">
             <img class="col-12 col-lg-8 img_car" :src="`${ob_data[key_s[num-1]].img}`">
             <div class="col-lg-4 col">
