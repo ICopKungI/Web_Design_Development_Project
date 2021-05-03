@@ -2,7 +2,7 @@
   --text_size: 18px;
   --text_font: 'Pridi', serif;
 /* h = head */
-  --h_text_size: 22px;
+  --h_text_size: 25px;
   --h_text_font: sans-serif;
 
   --menu_text_size: 18px;
@@ -21,8 +21,16 @@
 .carousel-item > img {
   object-fit: cover;
 }
+/* bg ภาพ */
 body{
-  background-color: rgb(34 54 70);
+  background-image: url(/img/bg.jpg);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.color_g1{
+  background-color:white;
 }
 .card {
   margin: auto;
