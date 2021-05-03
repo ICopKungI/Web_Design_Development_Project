@@ -147,6 +147,7 @@ a:hover{
 }
 
 .topic{
+  font-weight: bold;
   font-size: var(--topic_size);
   font-family: var(--topic_font);
 }
