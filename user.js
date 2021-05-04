@@ -56,6 +56,7 @@ let app = new Vue({
             Object.keys(this.pro_data).forEach(key => {
                 this.pro_link.push(this.pro_data[key].link);
             });
+            this.pro_link = Array.from(new Set(this.pro_link));
             this.car = Array.from(new Set(this.car2));
             this.cost = Array.from(new Set(this.cost2));
             this.len_pro_link = this.pro_link.length-1;
