@@ -30,9 +30,9 @@
 .carousel-item > img {
   object-fit: cover;
 }
-/* bg ภาพ ****-***  */
+/* bg ภาพ */
 body{
-  background-image: url(https://github.com/ICopKungI/Web_Design_Development_Project/blob/main/img/backg.jpg?raw=true);
+  background-image: url(img/backg.jpg);
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
